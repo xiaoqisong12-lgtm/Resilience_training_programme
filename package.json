@@ -8,7 +8,9 @@
     "start": "python -m http.server 8000 --bind 0.0.0.0 --directory src",
     "dev": "python -m http.server 8000 --bind 0.0.0.0 --directory src",
     "start:local": "python -m http.server 8000 --bind 127.0.0.1 --directory src",
-    "build": "echo 'No build step required for this project'"
+    "build": "echo 'No build step required for this project'",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
   },
   "keywords": [
     "心理弹性",
@@ -21,5 +23,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/your-username/resilience-programme.git"
+  },
+  "devDependencies": {
+    "wrangler": "^4.102.0"
   }
 }
